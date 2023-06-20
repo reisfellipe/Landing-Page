@@ -16,6 +16,9 @@ section.itens .item {
     max-width: 350px;
     padding: 0 30px;
 }
+section.itens .item abbr{
+    text-decoration: none;
+}
 section.itens .item img {
     width: 100%;
     max-width: 200px;
