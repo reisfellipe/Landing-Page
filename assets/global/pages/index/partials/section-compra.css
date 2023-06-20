@@ -1,0 +1,94 @@
+section.compra {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 80px;
+    position: relative;
+    overflow: hidden;
+}
+img.circulo{
+    position: absolute;
+    z-index: 1;
+    animation: girarcirculocompra 30s linear infinite;
+    bottom: -670px;
+    right: -380px;
+}
+@keyframes girarcirculocompra {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+section.compra img.logo {
+    width: 100%;
+    max-width: 300px;
+}
+section.compra .texto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 500px;
+    padding: 0 0 0 50px;
+}
+section.compra .texto h2 {
+    font-family: var(--bold);
+    font-size: 2rem;
+    color: var(--cor-branco); 
+    line-height: 1.2;
+    z-index: 2;
+}
+section.compra .texto h2 span{
+    color: var(--cor-verde);
+}
+section.compra .texto p {
+    font-family: var(--regular);
+    font-size: 1rem;
+    color: var(--cor-branco); 
+    line-height: 1.5;
+    z-index: 2;
+    margin: 15px 0 20px 0;
+}
+section.compra .texto a {
+    font-family: var(--bold);
+    font-size: 1rem;
+    color: var(--cor-branco);
+    background-color: var(--cor-verde);
+    text-decoration: none;
+    padding: 15px 50px;
+    border-radius: 50px;
+    transition: all .3s;
+    z-index: 2;
+}
+section.compra .texto a:hover{
+    background-color: var(--cor-branco);
+    color: var(--cor-verde);
+}
+@media screen and (max-width: 1000px){
+    section.compra {
+        flex-direction: column;
+        padding: 60px 20px;
+    }
+    img.circulo{
+        bottom: -750px;
+        right: -600px;
+    }
+    section.compra img.logo {
+        width: 100%;
+        max-width: 150px;
+    }
+    section.compra .texto {
+        align-items: center;
+        text-align: center;
+        padding: 30px 0 0 0;
+    }
+    section.compra .texto h2 {
+        font-size: 1.5rem;
+        line-height: 1.5;
+    }
+    section.compra .texto h2 span{
+        color: var(--cor-verde);
+    }
+}

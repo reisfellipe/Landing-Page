@@ -7,3 +7,6 @@
     line-height: 1;
     appearance: none;   
 }
+body,html{
+    background-color: var(--cor-preto);
+}
