@@ -20,6 +20,10 @@ nav h2.logo{
     letter-spacing: 10px;
 }
 
+nav h2.logo:active{
+    color: var(--cor-vermelha);
+}
+
 nav .opcoes a{
     font-family: var(--regular);
     font-size: 0.9rem;
